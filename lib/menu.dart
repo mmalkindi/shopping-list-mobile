@@ -73,7 +73,7 @@ class ShopCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Colors.indigo,
+      color: Theme.of(context).colorScheme.primary,
       child: InkWell(
         // Area responsive terhadap sentuhan
         onTap: () {
@@ -85,7 +85,11 @@ class ShopCard extends StatelessWidget {
         },
         child: Container(
           // Container untuk menyimpan Icon dan Text
-          padding: const EdgeInsets.all(8),
+          padding: const EdgeInsets.symmetric(
+            horizontal: 12,
+            vertical: 12,
+          ),
+          color: Theme.of(context).colorScheme.primary,
           child: Center(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
