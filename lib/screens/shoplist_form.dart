@@ -32,36 +32,36 @@ class _ShopFormPageState extends State<ShopFormPage> {
         child: SingleChildScrollView(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
+            children: <Widget>[
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
+                  autovalidateMode: AutovalidateMode.onUserInteraction,
                   decoration: InputDecoration(
-                    hintText: "Nama Produk",
                     labelText: "Nama Produk",
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
                   ),
-                  onChanged: (String? value) {
-                    setState(() {
-                      _name = value!;
-                    });
-                  },
                   validator: (String? value) {
                     if (value == null || value.isEmpty) {
                       return "Nama tidak boleh kosong!";
                     }
                     return null;
                   },
+                  onChanged: (String? value) {
+                    setState(() {
+                      _name = value!;
+                    });
+                  },
                 ),
               ),
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
+                  autovalidateMode: AutovalidateMode.onUserInteraction,
                   decoration: InputDecoration(
-                    hintText: "Harga",
-                    labelText: "Harga",
+                    labelText: "Harga Produk",
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
                     ),
@@ -85,8 +85,8 @@ class _ShopFormPageState extends State<ShopFormPage> {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: TextFormField(
+                  autovalidateMode: AutovalidateMode.onUserInteraction,
                   decoration: InputDecoration(
-                    hintText: "Deskripsi",
                     labelText: "Deskripsi",
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(5.0),
@@ -141,8 +141,8 @@ class _ShopFormPageState extends State<ShopFormPage> {
                             );
                           },
                         );
+                        _formKey.currentState!.reset();
                       }
-                      _formKey.currentState!.reset();
                     },
                     child: const Text(
                       "Save",
