@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:shopping_list/menu.dart';
+import 'package:shopping_list/screens/menu.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,12 +30,12 @@ class MyApp extends StatelessWidget {
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
         brightness: Brightness.light,
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigo),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.indigoAccent),
         useMaterial3: true,
       ),
       darkTheme: ThemeData(
         colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.indigo,
+          seedColor: Colors.indigoAccent,
           brightness: Brightness.dark,
         ),
         brightness: Brightness.dark,
