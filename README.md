@@ -2,6 +2,8 @@
 
 [![Build status](https://build.appcenter.ms/v0.1/apps/3546a403-dc6b-4c86-840b-de624df3f12f/branches/main/badge)](https://appcenter.ms)
 
+[Download APK](https://install.appcenter.ms/orgs/mmalkindi-personal/apps/shopping-list/distribution_groups/public)
+
 A new Flutter project.
 
 ## Getting Started
